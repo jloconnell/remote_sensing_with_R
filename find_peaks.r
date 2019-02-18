@@ -49,10 +49,10 @@ findpeaks <- function(vec,bw=1,x.coo=c(1:length(vec)))
 #peaks<-findpeaks(smoothingSpline$y)
 #
 ##which dates are the maxes?
-as.Date(smoothingSpline$x[peaks$xmax], origin="1970-01-01")
+#as.Date(smoothingSpline$x[peaks$xmax], origin="1970-01-01")
 #
 ##which dates are the mins?
-as.Date(smoothingSpline$x[peaks$xmin], origin="1970-01-01")
+#as.Date(smoothingSpline$x[peaks$xmin], origin="1970-01-01")
 #
 ##get extrema
 #peaks<-findpeaks(data$y)
