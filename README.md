@@ -1,2 +1,2 @@
-# remote_sensing_with_R
-Code for processing remote sensing data in R
+# Remote Sensing with R
+Code and functions for processing remote sensing data in R
