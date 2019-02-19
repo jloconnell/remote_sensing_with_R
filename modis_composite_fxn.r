@@ -11,12 +11,12 @@
 ##   if the timeseries has been filtered (for clouds, tides, etc), 
 ##   leave NA in the vegetation index column to omit it from the calculation 
 
-
 ##This function creates an average of vegetation index values from low view angles within the specified window 
 ##through the following rules: 
 ##  -if available, create an average of up to 5 index observations with view zenith angles <40 degrees, 
 ##  -if obs with viewzen <40 don't exist but viewzen <55 exists, use the single minimum view zen index value, 
 ##  -insert NA for windows with no view zenith angles <55 degrees
+
 ##Usage, date is a date vector (from as.Date()) 
 ##       viewzen is the cooresponding vector of view zenith angles (numeric) from the daily MODIS data product MOD11A1
 ##       index is the spectral reflectance index (numeric) to be composited (ex: NDVI)
