@@ -6,9 +6,11 @@
 ##     http://dx.doi.org/10.1016/j.rse.2017.08.008
 
 ##This function is intended to be applied to a timeseries from a single pixel and requires a row for each day;
-##if the timeseries has been filtered (for clouds, tides, etc), leave NA in the vegetation index column 
-##for the filtered day, which will omit it from the composite
-##to apply this over multiple pixels, use for loops, apply functions, data.table, or tidyverse functions
+##  to apply this over multiple pixels, use for loops, apply functions, data.table, or tidyverse functions
+##Only high quality data should be composited:
+##   if the timeseries has been filtered (for clouds, tides, etc), 
+##   leave NA in the vegetation index column to omit it from the calculation 
+
 
 ##This function creates an average of vegetation index values from low view angles within the specified window 
 ##through the following rules: 
